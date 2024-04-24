@@ -1,0 +1,94 @@
+{
+  "layer": "top",
+
+  "reload_style_on_change": true,
+
+  "modules-left": [
+    "custom/arch",
+    "hyprland/window"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "backlight",
+    "pulseaudio",
+    "bluetooth",
+    "hyprland/language",
+    "network",
+    "clock"
+  ],
+
+  "custom/arch": {
+    "format": ""
+  },
+  "hyprland/window": {
+    "format": "{initialClass} - {title}",
+    "separate-outputs": true,
+    "max-length": 40
+  },
+  "hyprland/workspaces": {
+    "all-outputs": true,
+    "show-special": true
+    
+
+  },
+  "clock": {
+    "format": "  {:%H:%M}",
+    "on-click": "bash /home/jotafab/.config/hypr/wofi-powermenu.sh"
+  },
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": "",
+    "tooltip": false,
+    "format-icons": {
+      "headphone": " ",
+      "default": [
+        "",
+        "",
+        "󰕾",
+        "󰕾",
+        "󰕾",
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "pavucontrol-qt",
+    "scroll-step": 5
+  },
+  "bluetooth": {
+    "format": " {status}",
+    "format-connected": " {num_connections}",
+    "tooltip-format": "{device_enumerate}",
+    "tooltip-format-enumerate-connected": "{device_alias} {device_address}",
+    "on-click": "blueman-manager"
+  },
+
+  "network": {
+    "interface": "wlan0",
+    "format": " {ifname} ",
+    "format-wifi": "  {ipaddr}",
+    "format-ethernet": "{ipaddr}/{cidr}  ",
+    "format-disconnected": "<span color='#b4befe'>󰖪  No Network</span>",
+    "format-vpn": "<span color='#9fef00'> HTB {ipaddr} </span> ",
+    "tooltip": false,
+    "on-click": "nm-connection-editor"
+  }
+
+}
