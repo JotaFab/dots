@@ -9,7 +9,6 @@ window#waybar {
     background-color: transparent;
     transition-property: background-color;
     transition-duration: .5s;
-    margin: 5px;
 }
 
 
@@ -21,6 +20,7 @@ window#waybar {
     margin-right: 10px;
 
 }
+#tray,
 #clock,
 #backlight,
 #network,
@@ -29,13 +29,13 @@ window#waybar {
 #language,
 #workspaces,
 #window {
-    margin-top: 5px;
+/*    margin-top: 5px; */
     margin-left: 5px;
     margin-right: 5px;
-    border: 2px solid #143c59;
+ /*    border: 2px solid #143c59; */
     padding-left: 5px;
     padding-right: 5px;
-    border-radius: 15px;
+/*    border-radius: 15px; */
     color: #7ed3dd;
 
 }
@@ -48,7 +48,7 @@ window#waybar.empty #window {
 }
 
 #workspaces button{
-    border-radius: 20px;
+    border-radius: 20;
     color: #143c59
 }
 

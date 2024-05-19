@@ -1,6 +1,8 @@
 {
-  "layer": "top",
-
+  "layer": "bottom",
+  "position": "top",
+    "output":"eDP-1",
+  
   "reload_style_on_change": true,
 
   "modules-left": [
@@ -16,6 +18,7 @@
     "bluetooth",
     "hyprland/language",
     "network",
+    "tray",
     "clock"
   ],
 
@@ -30,12 +33,15 @@
   "hyprland/workspaces": {
     "all-outputs": true,
     "show-special": true
-    
+  },
+  "tray": {
+    "icon-size": 21,
+    "spacing": 10
 
   },
   "clock": {
     "format": "  {:%H:%M}",
-    "on-click": "bash /home/jotafab/.config/hypr/wofi-powermenu.sh"
+    "on-click": "wlogout"
   },
   "backlight": {
     "device": "intel_backlight",
