@@ -8,7 +8,7 @@ if status is-interactive
     alias l="ls -la"
     alias lt="l --tree"
     alias cat="bat -p"
-
+    alias icat="kitten icat"
 
     #FUNCTIONS
     function mkt

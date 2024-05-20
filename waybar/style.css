@@ -20,6 +20,7 @@ window#waybar {
     margin-right: 10px;
 
 }
+#custom-notification,
 #tray,
 #clock,
 #backlight,
