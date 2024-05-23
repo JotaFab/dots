@@ -2,7 +2,6 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
     starship init fish | source
     fish_add_path ~/go/bin        
-
     #ALIAS
     alias ls="lsd"
     alias l="ls -la"
@@ -21,8 +20,11 @@ if status is-interactive
         echo -e "\n[*] Extracting information...\n" > extractPorts.tmp
         echo -e "\t[*] IP Address: $ip_address"  >> extractPorts.tmp
         echo -e "\t[*] Open ports: $ports\n"  >> extractPorts.tmp
-        echo $ports | tr -d '\n' | fish_clipboard
+        echo $ports | tr -d '\n' | wl-copy 
         echo -e "[*] Ports copied to clipboard\n"  >> extractPorts.tmp
         cat extractPorts.tmp; rm extractPorts.tmp
     end
 end
+
+# Created by `pipx` on 2024-05-23 02:42:41
+set PATH $PATH /home/jotafab/.local/bin
