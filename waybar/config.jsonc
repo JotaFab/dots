@@ -1,14 +1,13 @@
 {
   "layer": "bottom",
   "position": "top",
-    "output":"eDP-1",
-  
+  "output":"eDP-1",
   "reload_style_on_change": true,
-
+  
   "modules-left": [
     "custom/arch",
-    "hyprland/window"
   ],
+
   "modules-center": [
     "hyprland/workspaces"
   ],

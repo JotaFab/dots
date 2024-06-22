@@ -1,6 +1,6 @@
 * {
     font-family: 'FiraCode Nerd Font';
-    font-size: 15px;
+    font-size: 14px;
 
 }
 
@@ -50,7 +50,7 @@ window#waybar.empty #window {
 
 #workspaces button{
     border-radius: 20;
-    color: #143c59
+    color: #143c59;
 }
 
 
