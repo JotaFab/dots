@@ -8,7 +8,7 @@ if status is-interactive
     alias lt="l --tree"
     alias cat="bat -p"
     alias icat="kitten icat"
-
+    alias s="kitten ssh"
     #FUNCTIONS
     function mkt
         mkdir {nmap,content,exploits,scripts}
