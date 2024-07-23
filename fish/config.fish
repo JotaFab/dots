@@ -1,15 +1,23 @@
+
 if status is-interactive
+    
+    zoxide init fish | source
+    atuin init fish --disable-up-arrow | source
     # Commands to run in interactive sessions can go here
     starship init fish | source
     fish_add_path ~/go/bin        
     #ALIAS
-    alias ls="lsd"
-    alias l="ls -la"
-    alias lt="l --tree"
+
+    alias fzf="fzf --height 40% --layout reverse --border --tmux 70%"
+    alias ls="lsd -l"
+    alias l="ls -ar"
+    alias lt="ls --tree"
     alias cat="bat -p"
     alias icat="kitten icat"
     alias s="kitten ssh"
+    alias z="cd"
     #FUNCTIONS
+    set -Ux EDITOR neovim
     function mkt
         mkdir {nmap,content,exploits,scripts}
     end
