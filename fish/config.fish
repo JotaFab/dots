@@ -15,7 +15,6 @@ if status is-interactive
     alias cat="bat -p"
     alias icat="kitten icat"
     alias s="kitten ssh"
-    alias z="cd"
     #FUNCTIONS
     set -Ux EDITOR neovim
     function mkt
@@ -34,5 +33,4 @@ if status is-interactive
     end
 end
 
-# Created by `pipx` on 2024-05-23 02:42:41
-set PATH $PATH /home/jotafab/.local/bin
+
