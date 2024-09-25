@@ -1,0 +1,9 @@
+HISTFILE=~/.config/zsh/.histfile
+HISTSIZE=5000
+SAVEHIST=100000
+setopt autocd extendedglob
+unsetopt beep
+bindkey -v
+
+eval "$(starship init zsh)"
+# Configure the prompt with embedded Solarized color codes
