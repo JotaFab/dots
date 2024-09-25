@@ -4,6 +4,8 @@ SAVEHIST=100000
 setopt autocd extendedglob
 unsetopt beep
 bindkey -v
-
+alias ls="lsd"
+alias ll="ls -l"
+alias la="la -lAtr"
 eval "$(starship init zsh)"
 # Configure the prompt with embedded Solarized color codes
