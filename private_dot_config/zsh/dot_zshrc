@@ -7,5 +7,8 @@ bindkey -v
 alias ls="lsd"
 alias ll="ls -l"
 alias la="ls -lAtr"
+alias cat="bat"
+export PATH="$PATH:$HOME/go/bin"
 eval "$(starship init zsh)"
-# Configure the prompt with embedded Solarized color codes
+
+# Configure the prompt with embedded Solarized color codes
