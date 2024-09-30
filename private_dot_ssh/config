@@ -1,0 +1,9 @@
+Host localhost
+    UserKnownHostsFile /dev/null
+
+
+Host kalijota
+    HostName 192.168.122.163
+    User    kali
+    Port    22
+
