@@ -7,3 +7,7 @@ Host kalijota
     User    kali
     Port    22
 
+Host raspi
+	HostName 192.168.18.32
+	User	jotafab
+	Port	22
