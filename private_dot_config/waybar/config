@@ -1,23 +1,20 @@
 {
   "layer": "top",
   "position": "top",
-  "margin-bottom": -10,
   "spacing" : 0,
   "modules-left": [
-  "hyprland/workspaces",
-  "custom/uptime",
-  "cpu"
+    "custom/uptime",
+    "cpu"
   ],
-
-  "modules-center": ["clock"],
-
+  
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  
   "modules-right": [
-    "custom/pomodoro",
-    "bluetooth",
     "network",
     "pulseaudio", 
-    "backlight",
-    "battery",
+    "clock"
   ],
 
   "hyprland/workspaces": {
@@ -28,19 +25,6 @@
     }
   },
 
-  "bluetooth": {
-    "format": "󰂲",
-    "format-on": "{icon}",
-    "format-off": "{icon}", 
-    "format-connected":"{icon}",
-    "format-icons":{
-        "on":"󰂯",
-        "off": "󰂲",
-        "connected": "󰂱",
-        },
-    "on-click": "blueman-manager",
-    "tooltip-format-connected":"{device_enumerate}"
-  },
 
   "custom/music": {
     "format": "  {}",
@@ -105,22 +89,7 @@
     "on-click": "pavucontrol"
   },
 
-  "battery": {
-        "interval":2,
-        "states": {
-            // "good": 95,
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon}  {capacity}%",
-        "format-full": "{icon}  {capacity}%",
-        "format-charging": " {capacity}%",
-        "format-plugged": " {capacity}%",
-        "format-alt": "{icon} {time}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
-        "format-icons": ["", "", "", "", ""]
-  },
+
   
   "custom/lock": {
   "tooltip": false,
@@ -133,8 +102,8 @@
 	"return-type": "json",
 	"exec": "waybar-module-pomodoro --no-work-icons",
 	"on-click": "waybar-module-pomodoro toggle",
-	"on-click-right": "waybar-module-pomodoro reset",
-  },
+	"on-click-right": "waybar-module-pomodoro reset"
+  }
 
 }
 
