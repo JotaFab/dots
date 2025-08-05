@@ -1,0 +1,18 @@
+#
+# ~/.bashrc
+#
+
+GOPATH=$HOME/go  PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+alias grep='grep --color=auto'
+PS1='[\u@\h \W]\$ '
+alias ls="lsd"
+alias ll="ls -l"
+alias la="ls -lAtr"
+alias cat="bat"
+export PATH="$PATH:$HOME/go/bin"
+eval "$(starship init bash)"
+# Created by `pipx` on 2025-05-21 17:22:38
+export PATH="$PATH:/home/s13l/.local/bin"
