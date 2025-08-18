@@ -8,6 +8,6 @@ Host kalijota
     Port    22
 
 Host raspi
-	HostName 192.168.18.32
+	HostName 192.168.18.23
 	User	jotafab
 	Port	22
